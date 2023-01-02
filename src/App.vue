@@ -1,26 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ycheng-nav></ycheng-nav>
+  <ycheng-home></ycheng-home>
+  <ycheng-about></ycheng-about>
+  <ycheng-port></ycheng-port>
+  <ycheng-email></ycheng-email>
+  <ycheng-footer></ycheng-footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import YchengAbout from './components/YchengAbout.vue'
+import YchengEmail from './components/YchengEmail.vue'
+import YchengFooter from './components/YchengFooter.vue'
+import YchengHome from './components/YchengHome.vue'
+import YchengNav from './components/YchengNav.vue'
+import YchengPort from './components/YchengPort.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    YchengNav,
+    YchengHome,
+    YchengAbout,
+    YchengPort,
+    YchengEmail,
+    YchengFooter,
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang='scss'>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@500&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  @import './assets/style.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+  background: $bgColor;
+}
+html {
+  font-size: 62.5%;
+}
+section {
+  padding: 5rem 0rem;
 }
 </style>
