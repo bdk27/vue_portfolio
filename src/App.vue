@@ -30,8 +30,9 @@ export default {
 
 <style lang='scss'>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
-  /* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@500&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@500&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
   @import './assets/style.scss';
 
 * {
@@ -39,7 +40,6 @@ export default {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Noto Sans TC', sans-serif;
-  background: $bgColor;
 }
 html {
   font-size: 62.5%;

@@ -35,31 +35,36 @@
 <style lang='scss' scoped>
     @import '../assets/style.scss';
 
-    .navbar-brand {
-        font-size: 4.2rem;
-        font-family: 'Lobster', cursive;
-        color: #fff;
-         &:hover {
-            color: $light-green;
-        }
-        span {
-            color: $light-green;
-            font-family: 'Lobster', cursive;   
-        }
-    }
-    .navbar-toggler {
-        border: 1px solid #ccc;
-    }
-    .navbar-collapse {
-        flex-grow: 0;
-        .nav-link {
+    .navbar {
+        background: $bgColor;
+        .navbar-brand {
+            font-size: 4.2rem;
+            font-family: 'Poppins', sans-serif;
             color: #fff;
-            font-size: 1.8rem;
-            margin-right: 1rem;
+            font-weight: bold;
             &:hover {
-                color:  $light-green;
+                color: $light-green;
+            }
+            span {
+                color: $light-green;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+        .navbar-toggler {
+            border: 1px solid #ccc;
+        }
+        .navbar-collapse {
+            flex-grow: 0;
+            .nav-link {
+                color: #fff;
+                font-size: 1.8rem;
+                margin-right: 1rem;
+                &:hover {
+                    color:  $light-green;
+                }
             }
         }
     }
+    
 
 </style>
