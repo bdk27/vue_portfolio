@@ -33,12 +33,12 @@
 </script>
 
 <style lang='scss' scoped>
-    @import '../assets/style.scss';
+    @import '../assets/scss/style.scss';
 
     .navbar {
         background: $bgColor;
         .navbar-brand {
-            font-size: 4.2rem;
+            font-size:4rem;
             font-family: 'Poppins', sans-serif;
             color: #fff;
             font-weight: bold;
@@ -58,9 +58,9 @@
             .nav-link {
                 color: #fff;
                 font-size: 1.8rem;
-                margin-right: 1rem;
+                margin-left: 1rem;
                 &:hover {
-                    color:  $light-green;
+                    color: $light-green;
                 }
             }
         }
