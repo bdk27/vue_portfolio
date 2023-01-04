@@ -1,4 +1,23 @@
-$bgColor: #333;
+$bg-color: #333;
 $light-green: #41b883;
 $dark-green: #35495e;
 $text-color: #ccc;
+$card-text: gray;
+$html-color: #e65027;
+
+%headTitle {
+    font-size: 3rem;
+    span {
+    position: relative;   
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: $light-green;
+            left: 0;
+            bottom: -6px;
+        }
+    }
+}
+

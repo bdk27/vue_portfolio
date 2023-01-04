@@ -36,7 +36,7 @@
     @import '../assets/scss/style.scss';
 
     .navbar {
-        background: $bgColor;
+        background: $bg-color;
         .navbar-brand {
             font-size:4rem;
             font-family: 'Poppins', sans-serif;

@@ -45,6 +45,6 @@ html {
 }
 section {
   padding: 5rem 0rem;
-  background: $bgColor;
+  background: $bg-color;
 }
 </style>

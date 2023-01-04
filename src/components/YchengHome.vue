@@ -5,15 +5,16 @@
                 <div class="col-12">
                     <div class="items">
                         <h1><span class="en">Hi,</span> 我叫<span class="zh">顏永程</span></h1>
+                        <h4>My name is Yan,Yong-Cheng</h4>
                         <p class="lh-lg">我原來本身就讀設計系，在一次的因緣巧合之下轉到資工系就讀，並且思考著未來要朝什麼方向就職，經過一番思考後我希望能與過去所學的設計，以及現在所學的資工，結合在一起，因此萌生出想要成為前端工程師的想法</p>
                         <div class="icons">
-                            <font-awesome-icon icon="fa-brands fa-github" class="icon"/>
+                            <a href="https://github.com/bdk27"><font-awesome-icon icon="fa-brands fa-github" class="icon"/></a>
                             <font-awesome-icon icon="fa-brands fa-facebook" class="icon"/>
                             <font-awesome-icon icon="fa-brands fa-instagram" class="icon"/>
                         </div>
                         <div class="mouse d-flex align-items-center justify-content-center">
                             <font-awesome-icon icon="fa-solid fa-computer-mouse" class="icon mouse-icon"/>
-                            <p class="mx-4">往下滑</p>
+                            <p class="mx-4 mb-0">往下滑</p>
                             <font-awesome-icon icon="fa-solid fa-caret-down" class="icon mouse-icon"/>
                         </div>
                     </div>
@@ -55,7 +56,6 @@
                 font-size: 5rem;
                 font-weight: bold;
                 color: #fff;
-                
                 .en {
                     color: #fff;
                     font-family: 'Poppins', sans-serif;
@@ -63,6 +63,13 @@
                 .zh {
                     color: $light-green;
                 }
+            }
+            h4 {
+                color: $card-text;
+                position: relative;
+                font-size: 2.5rem;
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 1rem;
             }
             p {
                 color: $text-color;

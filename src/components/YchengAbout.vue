@@ -1,10 +1,10 @@
 <template>
     <section class="shadow-lg">
-        <h3  class="text-center text-light mb-5"><span>關於我</span></h3>
+        <h3  class="text-center text-light mb-4"><span>關於我</span></h3>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <div class="items shadow d-flex justify-content-center flex-column align-items-center">
+                    <div class="items shadow d-flex justify-content-center flex-column align-items-center p-5">
                         <div class="image mb-3">
                             <img src="https://picsum.photos/id/684/300/300">
                         </div>
@@ -22,8 +22,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-8">
-                    <div class="items shadow h-100">
-                        <div class="tab-title d-flex align-items justify-content-start mb-5">
+                    <div class="items shadow h-100 p-5">
+                        <div class="tab-title d-flex align-items-center justify-content-start  mb-5 ">
                             <h5 class="tab-links active" @click="opentab">自我介紹</h5>
                             <h5 class="tab-links" @click="opentab">在校成績</h5>
                             <h5 class="tab-links" @click="opentab">外語能力</h5>
@@ -47,7 +47,7 @@
                                         <th>THREATS 威脅</th>
                                     </tr>
                                     <tr>
-                                        <td>前端研发需要掌握的技术也在迭代更新</td>
+                                        <td>前端開發需要掌握的技術也在迭代更新</td>
                                         <td>入行門檻相對較低，競爭激烈</td>
                                     </tr>
                                 </table>
@@ -103,26 +103,9 @@
     @import '../assets/scss/style.scss';
 
     h3 {
-        font-size: 3rem;
-        span {
-        position: relative;   
-            &::after {
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 3px;
-                background: $light-green;
-                left: 0;
-                bottom: -6px;
-            }
-        }
-       
-        /* span {
-            font-family: 'Poppins', sans-serif;
-        } */
+        @extend %headTitle
     }
     .items {
-        padding: 2rem;
         img {
             width: 100%;
             border-radius: 2rem;
