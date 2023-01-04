@@ -9,7 +9,33 @@
                 <div class="row row-cols-sm-1 row-cols-md-2 g-5" >
                     <div class="col-12" v-for="item in project.htmlProject" :key="item.id">
                         <div class="items">
-                            <img :src="item.img1" class="w-100">
+                            <div :id="item.id" class="carousel slide" data-bs-ride="carousel">
+                                 <!-- 下面三個指標 -->
+                                <div class="carousel-indicators" v-if="item.slide">
+                                    <button type="button" :data-bs-target="'#' + item.id" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" :data-bs-target="'#' + item.id" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+
+                                <!-- 中間圖片 -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="5000">
+                                        <img :src="item.img1" class="w-100">
+                                    </div>
+                                    <div class="carousel-item" v-if="item.slide" data-bs-interval="5000">
+                                        <img :src="item.img2" class="w-100">
+                                    </div>
+                                </div>
+
+                                <!-- 左右箭頭 -->
+                                <button class="carousel-control-prev" type="button" :data-bs-target="'#' + item.id" data-bs-slide="prev" v-if="item.slide">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" :data-bs-target="'#' + item.id" data-bs-slide="next" v-if="item.slide">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
 
                             <div class="card-body">
                                 <h4 class="card-title">{{ item.name }}</h4>
@@ -31,7 +57,37 @@
                  <div class="row row-cols-sm-1 row-cols-md-2 g-5" >
                     <div class="col-12" v-for="item in project.vueProject" :key="item.id">
                         <div class="items">
-                            <img :src="item.img1" class="w-100">
+                            <div :id="item.id" class="carousel slide" data-bs-ride="carousel">
+                                <!-- 下面三個指標 -->
+                                <div class="carousel-indicators">
+                                    <button type="button" :data-bs-target="'#' + item.id" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" :data-bs-target="'#' + item.id" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" :data-bs-target="'#' + item.id" data-bs-slide-to="2" aria-label="Slide 3" v-if="item.carent"></button>
+                                </div>
+
+                                <!-- 中間圖片 -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="5000">
+                                        <img :src="item.img1" class="w-100">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="5000">
+                                        <img :src="item.img2" class="w-100">
+                                    </div>
+                                    <div class="carousel-item" v-if="item.carent" data-bs-interval="5000">
+                                        <img :src="item.img3" class="w-100">
+                                    </div>
+                                </div>
+
+                                <!-- 左右箭頭 -->
+                                <button class="carousel-control-prev" type="button" :data-bs-target="'#' + item.id" data-bs-slide="prev" v-if="item.slide">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" :data-bs-target="'#' + item.id" data-bs-slide="next" v-if="item.slide">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
 
                             <div class="card-body">
                                 <h4 class="card-title">{{ item.name }}</h4>
@@ -57,6 +113,7 @@
         name: 'YchengPort',
         setup() {
 
+            //作品集資料
             const project = reactive({
                 htmlProject,
                 vueProject
@@ -94,36 +151,34 @@
         &:hover {
             box-shadow: 0 0 10px 5px $light-green;
         }
-        img {
-            border-radius: 1rem;
-        }
         .card-body {
             padding: 1rem;
+            h4 {
+                font-size: 2.5rem;
+                color: #fff;
+                margin: 1rem 0;
+            }
+            h5 {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+                color: $text-color;
+            }
+            p {
+                font-size: 1.6rem;
+                color: $text-color;
+            }
+            .icon {
+                color: $light-green;
+                font-size: 2rem;
+                margin-left: 1rem;
+            }
+            .card-btn {
+                text-decoration: none;
+                font-size: 2rem;
+                color: $light-green;
+            }
         }
-        h4 {
-            font-size: 2.5rem;
-            color: #fff;
-            margin: 1rem 0;
-        }
-        h5 {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-            color: $text-color;
-        }
-        p {
-            font-size: 1.6rem;
-            color: $text-color;
-        }
-        .icon {
-            color: $light-green;
-            font-size: 2rem;
-            margin-left: 1rem;
-        }
-        .card-btn {
-            text-decoration: none;
-            font-size: 2rem;
-            color: $light-green;
-        }
+        
     }
     
         
