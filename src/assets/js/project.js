@@ -5,7 +5,6 @@ const htmlProject = [
         id: nanoid(),
         name: '快打旋風V角色表',
         img1: require('../img/sfv-1.jpg'),
-        img2: require('../img/sfv-2.jpg'),
         point: 'html、css',
         content: '這是我的第一個作品，因為很喜歡快打旋風所以做了一個角色表，裡面包含五代所有角色故事以及相關訊息。由於是第一個作品，所以是為了讓我能夠熟悉 html 結構和 css 語法',
         url: 'https://bdk27.github.io/SFV/',

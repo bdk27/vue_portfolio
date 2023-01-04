@@ -9,31 +9,7 @@
                 <div class="row row-cols-sm-1 row-cols-md-2 g-5" >
                     <div class="col-12" v-for="item in project.htmlProject" :key="item.id">
                         <div class="items">
-                            <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-indicators" v-if="item.slide">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    </div>
-
-                                    <div class="carousel-item active" data-bs-interval="3000">
-                                        <img :src="item.img1" class="w-100">
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="3000" v-if="item.slide">
-                                        <img :src="item.img2" class="w-100">
-                                    </div>
-                                </div>
-
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev" v-if="item.slide">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next" v-if="item.slide">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
+                            <img :src="item.img1" class="w-100">
 
                             <div class="card-body">
                                 <h4 class="card-title">{{ item.name }}</h4>
@@ -55,35 +31,7 @@
                  <div class="row row-cols-sm-1 row-cols-md-2 g-5" >
                     <div class="col-12" v-for="item in project.vueProject" :key="item.id">
                         <div class="items">
-                            <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-indicators" v-if="item.slide">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3" v-if="item.carent"></button>
-                                    </div>
-
-                                    <div class="carousel-item active" data-bs-interval="3000">
-                                        <img :src="item.img1" class="w-100">
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="3000" v-if="item.slide">
-                                        <img :src="item.img2" class="w-100">
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="3000" v-if="item.slide && item.carent">
-                                        <img :src="item.img3" class="w-100">
-                                    </div>
-                                </div>
-
-                                <button class="carousel-control-prev" type="button" data-bs-target="carouselExampleAutoplaying2" data-bs-slide="prev" v-if="item.slide">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next" v-if="item.slide">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
+                            <img :src="item.img1" class="w-100">
 
                             <div class="card-body">
                                 <h4 class="card-title">{{ item.name }}</h4>
@@ -94,10 +42,10 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 </template>
 
@@ -145,6 +93,9 @@
         border-radius: 1rem;
         &:hover {
             box-shadow: 0 0 10px 5px $light-green;
+        }
+        img {
+            border-radius: 1rem;
         }
         .card-body {
             padding: 1rem;
