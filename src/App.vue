@@ -3,13 +3,13 @@
   <ycheng-home></ycheng-home>
   <ycheng-about></ycheng-about>
   <ycheng-port></ycheng-port>
-  <ycheng-email></ycheng-email>
+  <ycheng-contact></ycheng-contact>
   <ycheng-footer></ycheng-footer>
 </template>
 
 <script>
 import YchengAbout from './components/YchengAbout.vue'
-import YchengEmail from './components/YchengEmail.vue'
+import YchengContact from './components/YchengContact.vue'
 import YchengFooter from './components/YchengFooter.vue'
 import YchengHome from './components/YchengHome.vue'
 import YchengNav from './components/YchengNav.vue'
@@ -22,7 +22,7 @@ export default {
     YchengHome,
     YchengAbout,
     YchengPort,
-    YchengEmail,
+    YchengContact,
     YchengFooter,
   }
 }

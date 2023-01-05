@@ -18,11 +18,11 @@
 
                                 <!-- 中間圖片 -->
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="5000">
-                                        <img :src="item.img1" class="w-100">
+                                    <div class="carousel-item active" data-bs-interval="3000">
+                                        <img :src="item.img1">
                                     </div>
-                                    <div class="carousel-item" v-if="item.slide" data-bs-interval="5000">
-                                        <img :src="item.img2" class="w-100">
+                                    <div class="carousel-item" v-if="item.slide" data-bs-interval="3000">
+                                        <img :src="item.img2">
                                     </div>
                                 </div>
 
@@ -67,14 +67,14 @@
 
                                 <!-- 中間圖片 -->
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="5000">
-                                        <img :src="item.img1" class="w-100">
+                                    <div class="carousel-item active" data-bs-interval="3000">
+                                        <img :src="item.img1">
                                     </div>
-                                    <div class="carousel-item" data-bs-interval="5000">
-                                        <img :src="item.img2" class="w-100">
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img :src="item.img2">
                                     </div>
-                                    <div class="carousel-item" v-if="item.carent" data-bs-interval="5000">
-                                        <img :src="item.img3" class="w-100">
+                                    <div class="carousel-item" v-if="item.carent" data-bs-interval="3000">
+                                        <img :src="item.img3">
                                     </div>
                                 </div>
 
@@ -150,6 +150,15 @@
         border-radius: 1rem;
         &:hover {
             box-shadow: 0 0 10px 5px $light-green;
+            transform: scale(1.1);
+            transition: .5s;
+        }
+        .carousel-item {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         .card-body {
             padding: 1rem;
@@ -180,8 +189,5 @@
         }
         
     }
-    
-        
-    
 
 </style>

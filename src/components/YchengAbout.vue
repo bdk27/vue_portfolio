@@ -1,10 +1,10 @@
 <template>
-    <section class="shadow-lg">
-        <h3  class="text-center text-light mb-4"><span>關於我</span></h3>
+    <section>
+        <h3  class="text-center text-light mb-5"><span>關於我</span></h3>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <div class="items shadow d-flex justify-content-center flex-column align-items-center p-5">
+                    <div class="items shadow-lg d-flex justify-content-center flex-column align-items-center p-5">
                         <div class="image mb-3">
                             <img src="https://picsum.photos/id/684/300/300">
                         </div>
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-8">
-                    <div class="items shadow h-100 p-5">
+                    <div class="items shadow-lg h-100 p-5">
                         <div class="tab-title d-flex align-items-center justify-content-start  mb-5 ">
                             <h5 class="tab-links active" @click="opentab">自我介紹</h5>
                             <h5 class="tab-links" @click="opentab">在校成績</h5>
@@ -103,7 +103,7 @@
     @import '../assets/scss/style.scss';
 
     h3 {
-        @extend %headTitle
+        @extend %headTitle;
     }
     .items {
         img {

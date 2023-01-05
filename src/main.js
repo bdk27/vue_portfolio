@@ -8,9 +8,9 @@ import bootstrap from 'bootstrap/dist/js/bootstrap.bundle'
 //fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faUser, faCakeCandles, faGraduationCap, faPhone, faMap, faEnvelope, faComputerMouse, faCaretDown, faCaretRight } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faCakeCandles, faGraduationCap, faPhone, faMap, faEnvelope, faComputerMouse, faCaretDown, faCaretRight, faShare } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faFacebook, faInstagram, faVuejs  } from '@fortawesome/free-brands-svg-icons'
-library.add(faGithub, faFacebook, faInstagram, faUser, faCakeCandles, faGraduationCap, faPhone, faMap, faEnvelope, faComputerMouse, faCaretDown, faVuejs, faCaretRight )
+library.add(faGithub, faFacebook, faInstagram, faUser, faCakeCandles, faGraduationCap, faPhone, faMap, faEnvelope, faComputerMouse, faCaretDown, faVuejs, faCaretRight, faShare )
 
 
 createApp(App)
