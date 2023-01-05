@@ -55,7 +55,7 @@
     import { ref } from 'vue';
 
     export default {
-        name: 'YchengEmail',
+        name: 'YchengContact',
         setup() {
 
             const form = ref(null);
