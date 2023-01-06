@@ -1,5 +1,5 @@
 <template>
-    <div class="home">
+    <div class="home" id="home">
         <div class="container">
             <div class="row row-cols-sm-1 row-cols-md-2">
                 <div class="col-12">
@@ -9,8 +9,8 @@
                         <p class="lh-lg">我原來本身就讀設計系，在一次的因緣巧合之下轉到資工系就讀，並且思考著未來要朝什麼方向就職，經過一番思考後我希望能與過去所學的設計，以及現在所學的資工，結合在一起，因此萌生出想要成為前端工程師的想法</p>
                         <div class="icons">
                             <a href="https://github.com/bdk27"><font-awesome-icon icon="fa-brands fa-github" class="icon"/></a>
-                            <font-awesome-icon icon="fa-brands fa-facebook" class="icon"/>
-                            <font-awesome-icon icon="fa-brands fa-instagram" class="icon"/>
+                            <a href="https://www.facebook.com/profile.php?id=100001681376720&mibextid=LQQJ4d"><font-awesome-icon icon="fa-brands fa-facebook" class="icon"/></a>
+                            <a href="https://instagram.com/assz516149"><font-awesome-icon icon="fa-brands fa-instagram" class="icon"/></a>
                         </div>
                         <div class="mouse d-flex align-items-center justify-content-center">
                             <font-awesome-icon icon="fa-solid fa-computer-mouse" class="icon mouse-icon"/>

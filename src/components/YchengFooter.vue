@@ -10,18 +10,18 @@
 
                 <div class="mid">
                     <ul class="d-flex align-items-center justify-content-center me-auto mb-2 mb-lg-0">
-                        <li>首頁</li>
-                        <li>關於我</li>
-                        <li>作品集</li>
-                        <li>聯絡我</li>
+                        <li><a href="#home">首頁</a></li>
+                        <li><a href="#about">關於我</a></li>
+                        <li><a href="#port">作品集</a></li>
+                        <li><a href="#contact">聯絡我</a></li>
                     </ul>
                 </div>
 
                 <div class="right">
                     <div class="icons">
                         <a href="https://github.com/bdk27"><font-awesome-icon icon="fa-brands fa-github" class="icon"/></a>
-                        <a href="#"><font-awesome-icon icon="fa-brands fa-facebook" class="icon"/></a>
-                        <a href="#"><font-awesome-icon icon="fa-brands fa-instagram" class="icon"/></a>
+                        <a href="https://www.facebook.com/profile.php?id=100001681376720&mibextid=LQQJ4d"><font-awesome-icon icon="fa-brands fa-facebook" class="icon"/></a>
+                        <a href="https://instagram.com/assz516149"><font-awesome-icon icon="fa-brands fa-instagram" class="icon"/></a>
                     </div>
                 </div>
             </div>
@@ -61,12 +61,15 @@
                 ul {
                     padding: 0;
                     li {
-                        color: #fff;
-                        font-size: 1.8rem;
-                        margin: 0 1rem;
-                        cursor: pointer;
-                        &:hover {
-                            color: $light-green;
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                            font-size: 1.8rem;
+                            margin: 0 1rem;
+                            cursor: pointer;
+                            &:hover {
+                                color: $light-green;
+                            }
                         }
                     }
                 }

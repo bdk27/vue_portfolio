@@ -9,16 +9,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">首頁</a>
+                        <a class="nav-link" aria-current="page" href="#home">首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">關於我</a>
+                        <a class="nav-link" href="#about">關於我</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">作品集</a>
+                        <a class="nav-link" href="#port">作品集</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">聯絡我</a>
+                        <a class="nav-link" href="#contact">聯絡我</a>
                     </li>
                 </ul>
             </div>

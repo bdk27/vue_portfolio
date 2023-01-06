@@ -42,6 +42,8 @@ export default {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top:6rem;
 }
 section {
   padding: 5rem 0rem;

@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="contact">
         <h3  class="text-center text-light mb-5"><span>聯絡我</span></h3>
         <div class="container">
             <div class="shadow-lg p-5 mb-5">
