@@ -130,7 +130,7 @@
     @import '../assets/scss/style.scss';
 
     h3 {
-        @extend %headTitle;
+        @extend %head-title;
     }
     .brand-icons {
         text-align: center;
@@ -153,11 +153,14 @@
             transform: scale(1.1);
             transition: .5s;
         }
+        button {
+            &:hover {
+                background: $card-text;
+            }
+        }
         .carousel-item {
             img {
                 width: 100%;
-                height: 100%;
-                object-fit: cover;
             }
         }
         .card-body {

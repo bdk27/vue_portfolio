@@ -103,12 +103,12 @@
     @import '../assets/scss/style.scss';
 
     h3 {
-        @extend %headTitle;
+        @extend %head-title;
     }
     .items {
         img {
             width: 100%;
-            border-radius: 2rem;
+            border-radius: 50%;
         }
         .icon {
             margin-right: 1rem;

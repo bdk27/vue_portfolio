@@ -66,7 +66,7 @@
                 .then((result) => {
                     alert('SUCCESS!', result.text);
                 }, (error) => {
-                    console.log('FAILED...', error.text);
+                    alert('FAILED...', error.text);
                 });
             }
 
@@ -83,7 +83,7 @@
     @import '../assets/scss/style.scss';
 
     h3 {
-        @extend %headTitle;
+        @extend %head-title;
     }
     .items {
         display: flex;
@@ -124,6 +124,7 @@
                 border-radius: 1rem;
                 resize: none;
                 margin-bottom: 2rem;
+                background: #fff;
             }
             textarea {
                 height: 20rem;

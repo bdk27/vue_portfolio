@@ -36,19 +36,9 @@
     @import '../assets/scss/style.scss';
 
     .navbar {
-        background: $bg-color;
+        background: $nav-bg;
         .navbar-brand {
-            font-size:4rem;
-            font-family: 'Poppins', sans-serif;
-            color: #fff;
-            font-weight: bold;
-            &:hover {
-                color: $light-green;
-            }
-            span {
-                color: $light-green;
-                font-family: 'Poppins', sans-serif;
-            }
+            @extend %title-icon;
         }
         .navbar-toggler {
             border: 1px solid #ccc;
