@@ -9,11 +9,11 @@
                 <div class="row row-cols-sm-1 row-cols-md-2 g-5" >
                     <div class="col-12" v-for="item in project.htmlProject" :key="item.id">
                         <div class="items">
-                            <div :id="item.id" class="carousel slide" data-bs-ride="carousel">
+                            <div :id="'carousel' + item.id" class="carousel slide" data-bs-ride="carousel">
                                  <!-- 下面三個指標 -->
                                 <div class="carousel-indicators" v-if="item.slide">
-                                    <button type="button" :data-bs-target="'#' + item.id" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" :data-bs-target="'#' + item.id" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 </div>
 
                                 <!-- 中間圖片 -->
@@ -27,11 +27,11 @@
                                 </div>
 
                                 <!-- 左右箭頭 -->
-                                <button class="carousel-control-prev" type="button" :data-bs-target="'#' + item.id" data-bs-slide="prev" v-if="item.slide">
+                                <button class="carousel-control-prev" type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide="prev" v-if="item.slide">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" :data-bs-target="'#' + item.id" data-bs-slide="next" v-if="item.slide">
+                                <button class="carousel-control-next" type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide="next" v-if="item.slide">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
@@ -57,12 +57,12 @@
                  <div class="row row-cols-sm-1 row-cols-md-2 g-5" >
                     <div class="col-12" v-for="item in project.vueProject" :key="item.id">
                         <div class="items">
-                            <div :id="item.id" class="carousel slide" data-bs-ride="carousel">
+                            <div :id="'carousel' + item.id" class="carousel slide" data-bs-ride="carousel">
                                 <!-- 下面三個指標 -->
                                 <div class="carousel-indicators">
-                                    <button type="button" :data-bs-target="'#' + item.id" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" :data-bs-target="'#' + item.id" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" :data-bs-target="'#' + item.id" data-bs-slide-to="2" aria-label="Slide 3" v-if="item.carent"></button>
+                                    <button type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide-to="2" aria-label="Slide 3" v-if="item.carent"></button>
                                 </div>
 
                                 <!-- 中間圖片 -->
@@ -79,11 +79,11 @@
                                 </div>
 
                                 <!-- 左右箭頭 -->
-                                <button class="carousel-control-prev" type="button" :data-bs-target="'#' + item.id" data-bs-slide="prev" v-if="item.slide">
+                                <button class="carousel-control-prev" type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide="prev" v-if="item.slide">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" :data-bs-target="'#' + item.id" data-bs-slide="next" v-if="item.slide">
+                                <button class="carousel-control-next" type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide="next" v-if="item.slide">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
@@ -153,7 +153,7 @@
             transform: scale(1.1);
             transition: .5s;
         }
-        button {
+        .carousel-control-prev, .carousel-control-next {
             &:hover {
                 background: $card-text;
             }
