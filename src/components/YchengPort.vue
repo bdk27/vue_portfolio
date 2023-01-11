@@ -59,10 +59,10 @@
                         <div class="items">
                             <div :id="'carousel' + item.id" class="carousel slide" data-bs-ride="carousel">
                                 <!-- 下面三個指標 -->
-                                <div class="carousel-indicators">
+                                <div class="carousel-indicators" v-if="item.slide">
                                     <button type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide-to="2" aria-label="Slide 3" v-if="item.carent"></button>
+                                    <button type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide-to="2" aria-label="Slide 3" v-if="item.img3"></button>
                                 </div>
 
                                 <!-- 中間圖片 -->
@@ -70,10 +70,10 @@
                                     <div class="carousel-item active" data-bs-interval="3000">
                                         <img :src="item.img1">
                                     </div>
-                                    <div class="carousel-item" data-bs-interval="3000">
+                                    <div class="carousel-item" data-bs-interval="3000" v-if="item.img2">
                                         <img :src="item.img2">
                                     </div>
-                                    <div class="carousel-item" v-if="item.carent" data-bs-interval="3000">
+                                    <div class="carousel-item" v-if="item.img3" data-bs-interval="3000">
                                         <img :src="item.img3">
                                     </div>
                                 </div>

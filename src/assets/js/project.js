@@ -13,7 +13,7 @@ const htmlProject = [
     },
     {
         id: nanoid(),
-        name: '台灣彩券',
+        name: '台灣彩券(改造)',
         img1: require('../img/taiwanLottery.jpg'),
         point: 'html、css',
         content: '在找練習的時候，無意間看到台灣運彩的網站，覺得網站設計的不好看自己可以設計更好，剛好還沒完全熟悉 html 和 css，所以決定做一個出來看看，內容主要也是以 html 結構跟設定 css 為主',
@@ -76,11 +76,19 @@ const vueProject = [
         img1: require('../img/carent-1.jpg'),
         img2: require('../img/carent-2.jpg'),
         img3: require('../img/carent-3.jpg'),
-        point: 'bootstrap',
-        content: '這次網頁嘗試使用 bootstrap 來做，點擊立即租車按鈕或右邊的車子按鈕，進入到預約租車的頁面，選擇時間和地點後，可以按下查看車款按鈕就會出現一系列車款供你選擇，選定車款後點擊按鈕就會轉到輸入資料的頁面',
-        url: 'https://bdk27.github.io/vue_carRental/',
+        point: 'bootstrap、props、pinia',
+        content: '這次網頁嘗試使用 bootstrap 來做，點擊立即租車或右邊的車子按鈕進入到預約租車的頁面，選擇時間和地點後按下提交表單，之後按下查看車款就會出現一系列車款供你選擇，選定車款後點擊我要預約就會轉到輸入資料的頁面，並且會對日期和價錢自動進行計算',
+        url: 'https://bdk27.github.io/vue_carental_v2/',
         slide: true,
-        carent: true,
+    },
+    {
+        id: nanoid(),
+        name: '蛋白盒子(改造)',
+        img1: require('../img/proteinbox.jpg'),
+        point: 'vite',
+        content: '首次用 vite 進行開發，能明顯感受到與 cli 的差別，不僅速度快而且還方便。這次主題選擇蛋白盒子是因為平常我很喜歡吃這家店，看到它們網站後想要改變一下樣貌，所以決定拿它試一試',
+        url: 'https://bdk27.github.io/vite_proteinbox/',
+        slide: false,
     },
 ]
 
