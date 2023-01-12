@@ -6,7 +6,7 @@
                 <div class="col-12 col-md-4">
                     <div class="items shadow-lg d-flex justify-content-center flex-column align-items-center p-5">
                         <div class="image mb-3">
-                            <img src="https://picsum.photos/id/684/300/300">
+                            <img src="../assets/img/1.png" alt="">
                         </div>
                         <ul>
                             <li class="title">基本資料</li>
@@ -106,10 +106,17 @@
         @extend %head-title;
     }
     .items {
-        img {
-            width: 100%;
+        .image {
+            /* background: linear-gradient(rgb(65, 184, 131), rgb(53, 73, 95)); */
+            border: 1px solid $light-green;
+            width: 70%;
             border-radius: 50%;
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
         }
+        
         .icon {
             margin-right: 1rem;
         }
