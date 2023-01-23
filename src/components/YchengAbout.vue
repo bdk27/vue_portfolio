@@ -2,8 +2,8 @@
     <section id="about">
         <h3  class="text-center text-light mb-5"><span>關於我</span></h3>
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4">
+            <div class="row row-cols-md-1">
+                <div class="col-12 col-lg-4">
                     <div class="items shadow-lg d-flex justify-content-center flex-column align-items-center p-5">
                         <div class="image mb-3">
                             <img src="../assets/img/1.png" alt="">
@@ -21,7 +21,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-lg-8">
                     <div class="items shadow-lg h-100 p-5">
                         <div class="tab-title d-flex align-items-center justify-content-start  mb-5 ">
                             <h5 class="tab-links active" @click="opentab">自我介紹</h5>

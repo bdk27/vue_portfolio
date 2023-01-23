@@ -6,7 +6,7 @@
                 <div class="brand-icons mb-3">
                     <img src="../assets/img/html5-logo-31819.png" alt="">
                 </div>   
-                <div class="row row-cols-sm-1 row-cols-md-2 g-5" >
+                <div class="row row-cols-md-1 row-cols-lg-2 g-5" >
                     <div class="col-12" v-for="item in project.htmlProject" :key="item.id">
                         <div class="items">
                             <div :id="'carousel' + item.id" class="carousel slide" data-bs-ride="carousel">
@@ -54,7 +54,7 @@
                 <div class="brand-icons">
                     <font-awesome-icon icon="fa-brands fa-vuejs" class="icon"/>
                 </div>
-                 <div class="row row-cols-sm-1 row-cols-md-2 g-5" >
+                 <div class="row row-cols-md-1 row-cols-lg-2 g-5" >
                     <div class="col-12" v-for="item in project.vueProject" :key="item.id">
                         <div class="items">
                             <div :id="'carousel' + item.id" class="carousel slide" data-bs-ride="carousel">

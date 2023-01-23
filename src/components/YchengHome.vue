@@ -1,11 +1,11 @@
 <template>
     <div class="home" id="home">
         <div class="container">
-            <div class="row align-items-center row-cols-sm-1 row-cols-md-2 flex-lg-row flex-md-column-reverse flex-sm-column-reverse">
+            <div class="row align-items-center justify-content-between row-cols-sm-1 row-cols-md-2 flex-lg-row flex-md-column-reverse flex-sm-column-reverse">
                 <div class="col-12">
                     <div class="items">
-                        <div class="d-flex align-items-center">
-                            <h1 class="en me-3">Hi,</h1>
+                        <div class="">
+                            <h3 class="en me-3">Hello,</h3>
                             <h1 class="zh">我叫<span>顏永程</span></h1>
                         </div>
                         <h4>My name is Yan,Yong-Cheng</h4>
@@ -20,7 +20,7 @@
                 <div class="col-12">
                     <div class="items">
                         <div class="image">
-                            <img src="../assets/img/2.png" class="w-100">
+                            <img src="../assets/img/3.png" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                 padding: 1rem;
                 .en {
                     font-family: 'Poppins', sans-serif;
-                    font-size: 6rem;
+                    font-size: 3rem;
                     font-weight: bold;
                     color: #fff;
                 } 
@@ -94,8 +94,10 @@
                     }
                 }
                 .image {
-                    width: 80%;
-                    background: linear-gradient(rgb(65, 184, 131), rgba(53, 73, 95, .5));
+                    width: 100%;
+                    /* background: linear-gradient(rgb(65, 184, 131), rgba(53, 73, 95, .5)); */
+                   /*  background: linear-gradient(315deg,rgba(66, 211, 146, .5) 25%,rgba(100, 126, 255, .5)); */
+                    background: linear-gradient(to top, rgba(131, 96, 195, .5), rgba(65, 184, 131, .5));
                     border-radius: 50%;
                     margin: 0 auto;
                     img {
