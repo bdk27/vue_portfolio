@@ -101,6 +101,7 @@
 
 <style lang='scss' scoped>
     @import '../assets/scss/style.scss';
+    @import '../assets/scss/global.scss';
 
     h3 {
         @extend %head-title;

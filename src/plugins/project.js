@@ -4,8 +4,8 @@ const htmlProject = [
     {
         id: nanoid(),
         name: '快打旋風V角色表',
-        img1: require('../img/sfv-1.jpg'),
-        img2: require('../img/sfv-2.jpg'),
+        img1: require('../assets/img/sfv-1.jpg'),
+        img2: require('../assets/img/sfv-2.jpg'),
         point: 'HTML、CSS',
         content: '這是我的第一個作品，因為很喜歡快打旋風所以做了一個角色表，裡面包含五代所有角色故事以及相關訊息。由於是第一個作品，所以是為了讓我能夠熟悉 html 結構和 css 語法',
         url: 'https://bdk27.github.io/SFV/',
@@ -14,7 +14,7 @@ const htmlProject = [
     {
         id: nanoid(),
         name: '台灣彩券(改造)',
-        img1: require('../img/taiwanLottery.jpg'),
+        img1: require('../assets/img/taiwanLottery.jpg'),
         point: 'HTML、CSS',
         content: '在找練習的時候，無意間看到台灣運彩的網站，覺得網站設計的不好看自己可以設計更好，剛好還沒完全熟悉 html 和 css，所以決定做一個出來看看，內容主要也是以 html 結構跟設定 css 為主',
         url: 'https://bdk27.github.io/TaiwanLottery/',
@@ -23,7 +23,7 @@ const htmlProject = [
     {
         id: nanoid(),
         name: '星巴克',
-        img1: require('../img/starbucks.jpg'),
+        img1: require('../assets/img/starbucks.jpg'),
         point: 'RWD、JavaScript',
         content: '經過前面的練習後，我決定嘗試用星巴克的網站做練習，因為它的網站首頁大多是圖片比較簡單，所以決定看著它臨摹並且練習 RWD ，不僅如此也嘗試使用 js 做了導覽列',
         url: 'https://bdk27.github.io/starbucks/',
@@ -32,7 +32,7 @@ const htmlProject = [
     {
         id: nanoid(),
         name: '曜健身運動館',
-        img1: require('../img/sunlight.jpg'),
+        img1: require('../assets/img/sunlight.jpg'),
         point: 'HTML、CSS、JavaScript',
         content: '本身對於健身很有興趣，這間是我大學時期去的健身房，但因為它們只能用 line 或 facebook 聯絡，並沒有一個專門的網站，所以我嘗試使用當時所學的技巧來做出來網頁來',
         url: 'https://bdk27.github.io/sunlight-gym/',
@@ -43,8 +43,8 @@ const vueProject = [
     {
         id: nanoid(),
         name: '線上隨機產生用戶資訊',
-        img1: require('../img/user-1.jpg'),
-        img2: require('../img/user-2.jpg'),
+        img1: require('../assets/img/user-1.jpg'),
+        img2: require('../assets/img/user-2.jpg'),
         point: 'Vue',
         content: '嘗試使用 vue 框架來寫出網頁，選擇 option api 來試做。透過 fetch 來請求 random user 回傳人物資料，並且設定按鈕來切換淺色或深色背景，而這次練習也算是為了能更加熟悉整個 vue 的環境',
         url: 'https://bdk27.github.io/vue-user/',
@@ -53,8 +53,8 @@ const vueProject = [
     {
         id: nanoid(),
         name: 'TShop - 電商網站',
-        img1: require('../img/tshop-1.jpg'),
-        img2: require('../img/tshop-2.jpg'),
+        img1: require('../assets/img/tshop-1.jpg'),
+        img2: require('../assets/img/tshop-2.jpg'),
         point: 'Vue CLI、Vue Router、mitt',
         content: '首次使用 cli 來做出網頁，只要點擊購物車按鈕，就會使用 mitt 來傳送資料到 nav 組件，之後靠 router 來傳送資料到結帳頁面，在結帳頁面中可以調整數量，並即時計算費用',
         url: 'https://bdk27.github.io/vue_tshop/',
@@ -63,8 +63,8 @@ const vueProject = [
     {
         id: nanoid(),
         name: '登入頁面',
-        img1: require('../img/login-1.jpg'),
-        img2: require('../img/login-2.jpg'),
+        img1: require('../assets/img/login-1.jpg'),
+        img2: require('../assets/img/login-2.jpg'),
         point: 'Composition API、localStorage、SCSS',
         content: '首次使用 composition api 和 scss 來做出網頁，首先先到註冊帳號頁面來註冊帳號密碼，並且有圖形驗證機制，之後透過 localstorage 來儲存帳號密碼。最後再回到首頁進行登入',
         url: 'https://bdk27.github.io/vue_login/',
@@ -73,9 +73,9 @@ const vueProject = [
     {
         id: nanoid(),
         name: 'CARent - 租車網',
-        img1: require('../img/carent-1.jpg'),
-        img2: require('../img/carent-2.jpg'),
-        img3: require('../img/carent-3.jpg'),
+        img1: require('../assets/img/carent-1.jpg'),
+        img2: require('../assets/img/carent-2.jpg'),
+        img3: require('../assets/img/carent-3.jpg'),
         point: 'Bootstrap、Props、Pinia',
         content: '這次網頁嘗試使用 bootstrap 來做，點擊立即租車或右邊的車子按鈕進入到預約租車的頁面，選擇時間和地點後按下提交表單，之後按下查看車款就會出現一系列車款供你選擇，選定車款後點擊我要預約就會轉到輸入資料的頁面，並且會對日期和價錢自動進行計算',
         url: 'https://bdk27.github.io/vue_carental_v2/',
@@ -84,7 +84,7 @@ const vueProject = [
     {
         id: nanoid(),
         name: '蛋白盒子(改造)',
-        img1: require('../img/proteinbox.jpg'),
+        img1: require('../assets/img/proteinbox.jpg'),
         point: 'Vite',
         content: '首次用 vite 進行開發，能明顯感受到與 cli 的差別，不僅速度快而且還方便。這次主題選擇蛋白盒子是因為平常我很喜歡吃這家店，看到它們網站後想要改變一下樣貌，所以決定拿它試一試',
         url: 'https://bdk27.github.io/vite_proteinbox/',
@@ -93,7 +93,7 @@ const vueProject = [
     {
         id: nanoid(),
         name: '血壓紀錄表',
-        img1: require('../img/HTN.jpg'),
+        img1: require('../assets/img/HTN.jpg'),
         point: 'TypeScript',
         content: '平時血壓偏高所以有每天測量的習慣，順便做個紀錄表來監控我的血壓，而因為表格結構類似 todolist ，內容有新增、編輯等功能相較不複雜，所以利用此次來練習 typescript 開發',
         url: 'https://bdk27.github.io/vite_HTN/',
