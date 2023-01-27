@@ -4,7 +4,7 @@
             <font-awesome-icon icon="fa-brands fa-vuejs" class="icon"/>
         </div>
             <div class="row row-cols-md-1 row-cols-lg-2 g-5" >
-            <div class="col-12" v-for="item in project.vueProject" :key="item.id">
+            <div class="col-12" v-for="item in vueProject" :key="item.id">
                 <div class="items">
                     <div :id="'carousel' + item.id" class="carousel slide" data-bs-ride="carousel">
                         <!-- 下面三個指標 -->
@@ -53,19 +53,14 @@
 </template>
 
 <script>
-    import { reactive } from 'vue';
     import { vueProject } from '../plugins/project';
 
     export default {
         name: 'PortVue',
         setup() {
-            //作品集資料
-            const project = reactive({
-                vueProject
-            });
 
             return {
-                project,
+                vueProject,
             }
         }
     }

@@ -4,7 +4,7 @@
             <img src="../assets/img/html5-logo-31819.png" alt="">
         </div>   
         <div class="row row-cols-md-1 row-cols-lg-2 g-5" >
-            <div class="col-12" v-for="item in project.htmlProject" :key="item.id">
+            <div class="col-12" v-for="item in htmlProject" :key="item.id">
                 <div class="items">
                     <div :id="'carousel' + item.id" class="carousel slide" data-bs-ride="carousel">
                             <!-- 下面三個指標 -->
@@ -49,19 +49,14 @@
 </template>
 
 <script>
-    import { reactive } from 'vue';
     import { htmlProject } from '../plugins/project';
 
     export default {
         name: 'PortHtml',
         setup() {
-            //作品集資料
-            const project = reactive({
-                htmlProject,
-            });
 
             return {
-                project,
+                htmlProject,
             }
         }
     }
