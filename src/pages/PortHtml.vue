@@ -1,5 +1,5 @@
 <template>
-    <div class="shadow-lg p-5 mb-5">
+    <div class="shadow-lg p-5 mb-5" id="htmlProject">
         <div class="brand-icons mb-3">
             <img src="../assets/img/html5-logo-31819.png" alt="">
         </div>   

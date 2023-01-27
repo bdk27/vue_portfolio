@@ -6,7 +6,7 @@
                 <div class="col-12 col-lg-4">
                     <div class="items shadow-lg d-flex justify-content-center flex-column align-items-center p-5">
                         <div class="image mb-3">
-                            <img src="../assets/img/1.png" alt="">
+                            <img src="../assets/img/picwish.png" alt="">
                         </div>
                         <ul>
                             <li class="title">基本資料</li>

@@ -95,13 +95,14 @@
                 }
                 .image {
                     width: 100%;
+                    padding: 1rem;
                     /* background: linear-gradient(rgb(65, 184, 131), rgba(53, 73, 95, .5)); */
                    /*  background: linear-gradient(315deg,rgba(66, 211, 146, .5) 25%,rgba(100, 126, 255, .5)); */
-                    background: linear-gradient(to top, rgba(131, 96, 195, .5), rgba(65, 184, 131, .5));
                     border-radius: 50%;
                     margin: 0 auto;
                     img {
                         border-radius: 50%;
+                        background: linear-gradient(to top, rgba(131, 96, 195, .5), rgba(65, 184, 131, .5));
                     }
                 }
             }

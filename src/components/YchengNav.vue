@@ -14,8 +14,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#about">關於我</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#port">作品集</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">作品集</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#htmlProject">HTML專案</a></li>
+                            <li><a class="dropdown-item" href="#vueProject">Vue專案</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">聯絡我</a>
@@ -34,7 +38,7 @@
 
 <style lang='scss' scoped>
     @import '../assets/scss/style.scss';
-    @import '../assets/scss/global.scss';
+     @import '../assets/scss/global.scss';
 
     .navbar {
         background: $nav-bg;
@@ -53,6 +57,10 @@
                 &:hover {
                     color: $light-green;
                 }
+            }
+            .dropdown-item {
+                font-size: 1.6rem;
+                padding: 1rem;
             }
         }
     }

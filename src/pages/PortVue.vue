@@ -1,6 +1,6 @@
 <template>
-    <div class="shadow-lg p-5">
-        <div class="brand-icons">
+    <div class="shadow-lg p-5" id="vueProject">
+        <div class="brand-icons mb-3">
             <font-awesome-icon icon="fa-brands fa-vuejs" class="icon"/>
         </div>
             <div class="row row-cols-md-1 row-cols-lg-2 g-5" >
