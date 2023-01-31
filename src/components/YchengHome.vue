@@ -4,7 +4,7 @@
             <div class="row align-items-center justify-content-between row-cols-sm-1 row-cols-md-2 flex-lg-row flex-md-column-reverse flex-sm-column-reverse">
                 <div class="col-12">
                     <div class="items">
-                        <div class="">
+                        <div class="lan">
                             <h3 class="en me-3">Hello,</h3>
                             <h1 class="zh">我叫<span>顏永程</span></h1>
                         </div>
@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mouse d-flex align-items-center justify-content-start">
+            <div class="mouse">
                 <font-awesome-icon icon="fa-solid fa-computer-mouse" class="icon mouse-icon animate__animated animate__slideInDown animate__infinite animate__slow"/>
                 <p class="mx-4 mb-0">往下滑</p>
                 <font-awesome-icon icon="fa-solid fa-caret-down" class="icon mouse-icon"/>
@@ -57,28 +57,30 @@
             left: 50%;
             transform: translate(-50%, -50%);
             .items {
-                padding: 1rem;
-                .en {
+                .lan { 
+                   .en {
                     font-family: 'Poppins', sans-serif;
                     font-size: 3rem;
                     font-weight: bold;
                     color: #fff;
-                } 
-                .zh {
-                    font-size: 5rem;
-                    font-weight: bold;
-                    color: #fff;
-                    letter-spacing: 2px;
-                    span {
-                        color: $light-green;
-                    }
+                    } 
+                    .zh {
+                        font-size: 5rem;
+                        font-weight: bold;
+                        color: #fff;
+                        letter-spacing: 2px;
+                        span {
+                            color: $light-green;
+                        }
+                    } 
                 }
+                
                 h4 {
                     color: $card-text;
                     position: relative;
                     font-size: 2.5rem;
                     font-family: 'Poppins', sans-serif;
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.5rem;
                 }
                 p {
                     color: $text-color;
@@ -94,20 +96,23 @@
                     }
                 }
                 .image {
+                    position: relative;
                     width: 100%;
                     padding: 1rem;
-                    /* background: linear-gradient(rgb(65, 184, 131), rgba(53, 73, 95, .5)); */
-                   /*  background: linear-gradient(315deg,rgba(66, 211, 146, .5) 25%,rgba(100, 126, 255, .5)); */
                     border-radius: 50%;
                     margin: 0 auto;
                     img {
                         border-radius: 50%;
-                        background: linear-gradient(to top, rgba(131, 96, 195, .5), rgba(65, 184, 131, .5));
+                        background: linear-gradient(to top, rgba(131, 96, 195, .6), rgba(65, 184, 131, .6));
+                        /* box-shadow: 30px 30px rgba(131, 96, 195, .3); */
                     }
                 }
             }
         }
         .mouse {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
             margin-top: 5rem;
             p {
                 color: $text-color;
@@ -131,39 +136,47 @@
     @media (max-width: 991px) {
         .home {
             .container {
-               .row {
-                    flex-direction: column-reverse;
-                    .col-12 {
-                        width: 100%;
-                    }
-                    .items {
-                        .image {
-                            width: 70%;
+                .col-12 {
+                    width: 100%;
+                }
+                .items {
+                    text-align: center;
+                    .lan {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .en {
+                            font-size: 5rem;
                         }
                     }
-                    
+                    .image {
+                        width: 0;
+                    }   
                 } 
             }
-            
+            .mouse {
+                display: none;
+            }
         } 
     }
     @media (max-width: 768px) {
         .home {
             .container {
                 .items {
-                    .en {
-                        font-size: 4rem;
-                    }
-                    .zh {
-                        font-size: 4rem;
+                    .lan {
+                      
+                        .en {
+                            font-size: 4rem;
+                        }
+                        .zh {
+                            font-size: 4rem;
+                        }
                     }
                     h4 {
                         font-size: 2rem;
                     }
-                }
-                    
+                } 
             }
-            
         }
     }
     @media (max-width: 576px) {

@@ -182,5 +182,12 @@
         
     }
     
-
+    @media (max-width: 991px) {
+        .items {
+            .image {
+                width: 50%;
+            }
+        
+        }
+    }
 </style>
