@@ -1,16 +1,16 @@
 <template>
     <div class="home" id="home">
         <div class="container">
-            <div class="row align-items-center justify-content-between row-cols-sm-1 row-cols-md-2 flex-lg-row flex-md-column-reverse flex-sm-column-reverse">
+            <div class="row align-items-center justify-content-between row-cols-sm-1 row-cols-md-2">
                 <div class="col-12">
-                    <div class="items">
+                    <div class="items me-5">
                         <div class="lan">
                             <h3 class="en me-3">Hello,</h3>
                             <h1 class="zh">我叫<span>顏永程</span></h1>
                         </div>
                         <h4>My name is Yan,Yong-Cheng</h4>
-                        <p class="lh-lg">我原來本身就讀設計系，在一次的因緣巧合之下轉到資工系就讀，並且思考著未來要朝什麼方向就職，經過一番思考後我希望能與過去所學的設計，以及現在所學的資工，結合在一起，因此萌生出想要成為前端工程師的想法</p>
-                        <div class="icons">
+                        <p class="lh-base">我原來本身就讀設計系，在一次的因緣巧合之下轉到資工系就讀，並且思考著未來要朝什麼方向就職，經過一番思考後我希望能與過去所學的設計，以及現在所學的資工，結合在一起，因此萌生出想要成為前端工程師的想法</p>
+                        <div class="icons pt-3">
                             <a href="https://github.com/bdk27"><font-awesome-icon icon="fa-brands fa-github" class="icon"/></a>
                             <a href="https://www.facebook.com/profile.php?id=100001681376720&mibextid=LQQJ4d"><font-awesome-icon icon="fa-brands fa-facebook" class="icon"/></a>
                             <a href="https://instagram.com/assz516149"><font-awesome-icon icon="fa-brands fa-instagram" class="icon"/></a>
@@ -18,9 +18,18 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="items">
+                    <div class="items ms-5">
                         <div class="image">
-                            <img src="../assets/img/3.png" class="w-100">
+                            <div class="myself">
+                                <img src="../assets/img/3.png" class="w-100">
+                                <img src="../assets/img/person-bg.png" class="w-100 bg">
+                            </div>
+                            <div class="decro">
+                                <img src="../assets/img/AbstractWaves.png" class="waves">
+                                <img src="../assets/img/circle-p.png" class="circle-p">
+                                <img src="../assets/img/circle-g.png" class="circle-g">
+                                <img src="../assets/img/Sparkles.png" class="sparkles">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,15 +106,57 @@
                 }
                 .image {
                     position: relative;
-                    width: 100%;
-                    padding: 1rem;
-                    border-radius: 50%;
-                    margin: 0 auto;
-                    img {
-                        border-radius: 50%;
-                        background: linear-gradient(to top, rgba(131, 96, 195, .6), rgba(65, 184, 131, .6));
-                        /* box-shadow: 30px 30px rgba(131, 96, 195, .3); */
+                    .myself {
+                        position: relative;
+                        .bg {
+                            position: absolute;
+                            height: 400px;
+                            bottom: 0;
+                            left: 0;
+                            z-index: -2;
+                        }
+                        /* .circle {
+                            position: absolute;
+                            width: 800px;
+                            height: 200px;
+                            bottom: 20px;
+                            left: 50px;
+                            background: linear-gradient(to left, rgb(131, 96, 195), rgb(65, 184, 131))#41b883;
+                            box-shadow: #41b883 0px 7px 29px 0px;
+                            border-radius: 186px 257px 298px 134px / 138px 136px 113px 115px;
+                            z-index: -100;
+                        } */
                     }
+                    .sparkles {
+                        position: absolute;
+                        top: 50px;
+                        right: 100px;
+                        z-index: -1;
+                    }
+                    .circle-p {
+                        position: absolute;
+                        width: 40%;
+                        top: 100px;
+                        left: 20px;
+                        z-index: -1;
+                    }
+                    .circle-g {
+                        position: absolute;
+                        width: 40%;
+                        bottom: -70px;
+                        right: 0;
+                        z-index: -3;
+                    }
+                    .waves {
+                        position: absolute;
+                        top: 50%;
+                        left: 20px;
+                    }
+                    /* .waves2 {
+                        position: absolute;
+                        top: 45%;
+                        left: 200px;
+                    } */
                 }
             }
         }
@@ -150,7 +201,7 @@
                         }
                     }
                     .image {
-                        width: 0;
+                        display: none;
                     }   
                 } 
             }
