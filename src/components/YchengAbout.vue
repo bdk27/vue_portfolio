@@ -6,7 +6,8 @@
                 <div class="col-12 col-lg-4">
                     <div class="items shadow-lg d-flex justify-content-center flex-column align-items-center p-5">
                         <div class="image mb-3">
-                            <img src="../assets/img/picwish.png">
+                            <img src="../assets/img/picwish.png" class="about-myself">
+                            <img src="../assets/img/AbstractWaves.png" class="waves">
                         </div>
                         <ul>
                             <li class="title">基本資料</li>
@@ -108,12 +109,18 @@
     }
     .items {
         .image {
-            border: 1px solid $light-green;
+            position: relative;
             width: 70%;
-            border-radius: 50%;
-            img {
+            .about-myself {
                 width: 100%;
                 border-radius: 50%;
+                border: 1px solid $light-green;
+            }
+            .waves {
+                position: absolute;
+                width: 35%;
+                bottom: 0;
+                right: 0;
             }
         }
         

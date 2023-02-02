@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-between row-cols-sm-1 row-cols-md-2">
                 <div class="col-12">
-                    <div class="items me-lg-5">
+                    <div class="items me-lg-5 animate__animated animate__fadeIn animate__slow">
                         <div class="lan">
                             <h3 class="en me-lg-3">Hello,</h3>
                             <h1 class="zh">我叫<span>顏永程</span></h1>
@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="items ms-lg-5">
+                    <div class="items ms-lg-5 animate__animated animate__fadeIn animate__slow animate__delay-1s">
                         <div class="image">
                             <div class="myself">
                                 <img src="../assets/img/3.png" class="w-100">
@@ -29,7 +29,7 @@
                                 <img src="../assets/img/AbstractWaves.png" class="waves2">
                                 <img src="../assets/img/circle-p.png" class="circle-p">
                                 <img src="../assets/img/circle-g.png" class="circle-g">
-                                <img src="../assets/img/Sparkles.png" class="sparkles">
+                                <img src="../assets/img/Sparkles.png" class="sparkles animate__animated animate__pulse animate__infinite	">
                             </div>
                         </div>
                     </div>
