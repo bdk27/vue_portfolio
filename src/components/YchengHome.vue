@@ -3,9 +3,9 @@
         <div class="container">
             <div class="row align-items-center justify-content-between row-cols-sm-1 row-cols-md-2">
                 <div class="col-12">
-                    <div class="items me-5">
+                    <div class="items me-lg-5">
                         <div class="lan">
-                            <h3 class="en me-3">Hello,</h3>
+                            <h3 class="en me-lg-3">Hello,</h3>
                             <h1 class="zh">我叫<span>顏永程</span></h1>
                         </div>
                         <h4>My name is Yan,Yong-Cheng</h4>
@@ -18,14 +18,15 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="items ms-5">
+                    <div class="items ms-lg-5">
                         <div class="image">
                             <div class="myself">
                                 <img src="../assets/img/3.png" class="w-100">
-                                <img src="../assets/img/person-bg.png" class="w-100 bg">
+                                <img src="../assets/img/person-bg.png" class="w-100 myself-bg">
                             </div>
                             <div class="decro">
-                                <img src="../assets/img/AbstractWaves.png" class="waves">
+                                <img src="../assets/img/AbstractWaves.png" class="waves1">
+                                <img src="../assets/img/AbstractWaves.png" class="waves2">
                                 <img src="../assets/img/circle-p.png" class="circle-p">
                                 <img src="../assets/img/circle-g.png" class="circle-g">
                                 <img src="../assets/img/Sparkles.png" class="sparkles">
@@ -108,7 +109,7 @@
                     position: relative;
                     .myself {
                         position: relative;
-                        .bg {
+                        .myself-bg {
                             position: absolute;
                             height: 400px;
                             bottom: 0;
@@ -143,20 +144,20 @@
                     .circle-g {
                         position: absolute;
                         width: 40%;
-                        bottom: -70px;
+                        bottom: -20px;
                         right: 0;
-                        z-index: -3;
+                        z-index: -2;
                     }
-                    .waves {
+                    .waves1 {
                         position: absolute;
                         top: 50%;
                         left: 20px;
                     }
-                    /* .waves2 {
+                    .waves2 {
                         position: absolute;
-                        top: 45%;
-                        left: 200px;
-                    } */
+                        top: 60%;
+                        left: 100px;
+                    }
                 }
             }
         }
@@ -192,6 +193,7 @@
                 }
                 .items {
                     text-align: center;
+                    margin: 0;
                     .lan {
                         display: flex;
                         align-items: center;
