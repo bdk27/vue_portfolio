@@ -35,27 +35,103 @@
 
                             <div class="swot">
                                 <table>
-                                    <tr>
-                                        <th>STRENGTHS 優勢</th> 
-                                        <th>WEAKNESSES 劣勢</th>
-                                    </tr>
-                                    <tr>
-                                        <td>與其他本科系學生相比，擁有設計經驗，有助於日後開發和溝通</td>
-                                        <td>無團隊開發與實戰經驗</td>
-                                    </tr>
-                                    <tr>
-                                        <th>OPPORTUNITIES 機會</th>
-                                        <th>THREATS 威脅</th>
-                                    </tr>
-                                    <tr>
-                                        <td>前端開發需要掌握的技術也在迭代更新</td>
-                                        <td>入行門檻相對較低，競爭激烈</td>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th>STRENGTHS 優勢</th> 
+                                            <th>WEAKNESSES 劣勢</th>
+                                        </tr> 
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>與其他本科系學生相比，擁有設計經驗，有助於日後開發和溝通</td>
+                                            <td>無團隊開發與實戰經驗</td>
+                                        </tr>
+                                        <tr>
+                                            <th>OPPORTUNITIES 機會</th>
+                                            <th>THREATS 威脅</th>
+                                        </tr>
+                                        <tr>
+                                            <td>前端開發需要掌握的技術也在迭代更新</td>
+                                            <td>入行門檻相對較低，競爭激烈</td>
+                                        </tr>  
+                                    </tbody>      
                                 </table>
                             </div>
                         </div>
                         <div class="tab-contents">
-                            <p>456</p>
+                            <div class="">
+                                <p class="text-light">*此處為資工系相關成績，完整成績單請點擊右側按鈕</p>
+                                <!-- <teleport to='body'>
+                                    <img src="../assets/img/score.jpg" class="w-100">
+                                </teleport> -->
+                            </div>
+                            
+                            <div class="score">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>108 學年</th> 
+                                            <th>109 學年</th>
+                                            <th>110 學年</th>
+                                            <th>111 學年</th>
+                                        </tr>   
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p class="title">必修</p>
+                                                <p>物件導向程式設計 : 93分</p>
+                                                <p>作業系統 : 95分</p>
+                                                <p>機率與統計 : 94分</p>
+                                                <p class="title">選修</p>
+                                                <p>資訊倫理講座 : 96分</p>
+                                                <p>系統分析與設計 : 94分</p>
+                                            </td>
+                                            <td>
+                                                <p class="title">必修</p>
+                                                <p>計算機概論 : 94分</p>
+                                                <p>微積分(一) : 95分</p>
+                                                <p>電子物理 : 89分</p>
+                                                <p>數位系統 : 94分</p>
+                                                <p>工程數學 : 74分</p>
+                                                <p>計算機組織與結構 : 95分</p>
+                                                <p>離散數學 : 95分</p>
+                                                <p>實務專題與服務學習: 88分</p>
+                                                <p>微積分(二) : 95分</p>
+                                                <p>電子學 : 85分</p>
+                                                <p>線性代數 : 95分</p>
+                                                <p>微處理機系統 : 79分</p>
+                                                <p>程式能力檢定 : 90分</p>
+                                                <p>實務專題 : 50*分</p>
+                                                <p>演算法 : 96分</p>
+                                            </td>
+                                            <td>
+                                                <p class="title">必修</p>
+                                                <p>程式設計 : 92分</p>
+                                                <p>組合語言 : 100分</p>
+                                                <p>資料結構 : 96分</p>
+                                                <p>電腦網路 : 94分</p>
+                                                <p>實務專題與學習 : 50*分</p>
+                                                <p>實務專題 : 84分</p>
+                                                <p class="title">選修</p>
+                                                <p>資工人規劃 : 94分</p>
+                                                <p>python程式設計 : 79分</p>
+                                                <p>python程式設計演練 : 79分</p>
+                                                <p>科技英文導讀 : 98分</p>
+                                                <p>軟體工程 : 92分</p>
+                                                <p>資料庫系統 : 76分</p>
+                                                <p>科技英文寫作 : 95分</p>
+                                                <p>專案管理 : 100分</p>
+                                                <p>無線網路 : 98分</p>
+                                            </td>
+                                            <td>
+                                                <p class="title">必修</p>
+                                                <p>實務專題與學習 : 78分</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="tab-contents">
                             <p>789</p>
@@ -184,6 +260,33 @@
                 }
                
             }
+        }
+        .score {
+            table {
+                width: 100%;
+                thead {
+                    text-align: center;
+                    th {
+                        width: 20%;
+                        border: 1px solid $light-green;
+                        color: #fff;
+                        text-align: center;
+                        font-size: 1.6rem;
+                        padding: .5rem;
+                    } 
+                }
+                tbody {
+                    td {
+                        vertical-align: top;
+                        .title {
+                            color: $light-green;
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+            
+            
         }
         
     }
