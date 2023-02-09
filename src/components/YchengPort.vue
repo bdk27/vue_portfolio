@@ -9,8 +9,8 @@
 </template>
 
 <script>
-    import PortHtml from '@/pages/PortHtml.vue';
-    import PortVue from '@/pages/PortVue.vue';
+    import PortHtml from '@/pages/port/PortHtml.vue';
+    import PortVue from '@/pages/port/PortVue.vue';
 
     export default {
         name: "YchengPort",

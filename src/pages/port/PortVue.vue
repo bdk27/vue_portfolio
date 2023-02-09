@@ -1,16 +1,17 @@
 <template>
-    <div class="shadow-lg p-5 mb-5" id="htmlProject">
+    <div class="shadow-lg p-5" id="vueProject">
         <div class="brand-icons mb-3">
-            <img src="../assets/img/html5-logo-31819.png" alt="">
-        </div>   
-        <div class="row row-cols-md-1 row-cols-lg-2 g-5" >
-            <div class="col-12" v-for="item in htmlProject" :key="item.id">
+            <font-awesome-icon icon="fa-brands fa-vuejs" class="icon"/>
+        </div>
+            <div class="row row-cols-md-1 row-cols-lg-2 g-5" >
+            <div class="col-12" v-for="item in vueProject" :key="item.id">
                 <div class="items">
                     <div :id="'carousel' + item.id" class="carousel slide" data-bs-ride="carousel">
-                            <!-- 下面三個指標 -->
+                        <!-- 下面三個指標 -->
                         <div class="carousel-indicators" v-if="item.slide">
                             <button type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" :data-bs-target="'#carousel' + item.id" data-bs-slide-to="2" aria-label="Slide 3" v-if="item.img3"></button>
                         </div>
 
                         <!-- 中間圖片 -->
@@ -18,8 +19,11 @@
                             <div class="carousel-item active" data-bs-interval="3000">
                                 <img :src="item.img1">
                             </div>
-                            <div class="carousel-item" v-if="item.slide" data-bs-interval="3000">
+                            <div class="carousel-item" data-bs-interval="3000" v-if="item.img2">
                                 <img :src="item.img2">
+                            </div>
+                            <div class="carousel-item" v-if="item.img3" data-bs-interval="3000">
+                                <img :src="item.img3">
                             </div>
                         </div>
 
@@ -49,27 +53,26 @@
 </template>
 
 <script>
-    import { htmlProject } from '../plugins/project';
+    import { vueProject } from '../../plugins/project';
 
     export default {
-        name: 'PortHtml',
+        name: 'PortVue',
         setup() {
 
             return {
-                htmlProject,
+                vueProject,
             }
         }
     }
 </script>
 
 <style lang='scss' scoped>
-    @import '../assets/scss/style.scss';
-    @import '../assets/scss/variable.scss';
+    @import '@/assets/scss/style.scss';
+    @import '@/assets/scss/variable.scss';
 
     .brand-icons {
         @extend %brands;
     }
-    
     .items {
        @extend %card-items;
     }
