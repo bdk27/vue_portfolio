@@ -49,7 +49,7 @@
 </template>
 
 <script>
-    import { htmlProject } from '../../plugins/project';
+    import { htmlProject } from '../../assets/js/project';
 
     export default {
         name: 'PortHtml',

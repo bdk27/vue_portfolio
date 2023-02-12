@@ -53,7 +53,7 @@
 </template>
 
 <script>
-    import { vueProject } from '../../plugins/project';
+    import { vueProject } from '../../assets/js/project';
 
     export default {
         name: 'PortVue',
