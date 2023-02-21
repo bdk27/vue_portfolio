@@ -99,6 +99,15 @@ const vueProject = [
         url: 'https://bdk27.github.io/vite_HTN/',
         slide: false,
     },
+    {
+        id: nanoid(),
+        name: 'Edu-線上教育平台',
+        img1: require('../img/edu.jpg'),
+        point: 'Tailwind CSS',
+        content: '這次嘗試使用 tailwind 來製作網頁，使用了一些模板再稍微修改，跟 bootstrap 相比難度感覺比較高，而且也還沒習慣都使用 class 來寫樣式，但是我相信熟練以後會覺得很方便',
+        url: 'https://bdk27.github.io/vite_education/',
+        slide: false,
+    },
 ]
 
 export { htmlProject, vueProject }
