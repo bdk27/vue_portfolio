@@ -27,7 +27,7 @@
                         <div class="tab-title d-flex align-items-center justify-content-start  mb-5 ">
                             <h5 class="tab-links active" @click="opentab">自我介紹</h5>
                             <h5 class="tab-links" @click="opentab">在校成績</h5>
-                            <h5 class="tab-links" @click="opentab">外語能力</h5>
+                            <!-- <h5 class="tab-links" @click="opentab">外語能力</h5> -->
                         </div>
                         <div class="tab-contents lh-lg show">
                             <p>我高中就讀廣告設計，進入大學選擇了工業設計，但是念了二年後發覺這並不是我想要的，而在一次的課堂上老師無意講起了程式設計，當時看到就吸引我了，只要在電腦上打一些指令就能夠做到很多事情。從那天開始就自己先上網學程式，而我第一個學的是 python，練習到後來遇到了許多瓶頸，發現靠著自己的能力學習有限，而且也對於此領域的充滿好奇，所以決定跳脫舒適圈轉系到資工系就讀</p>
@@ -64,9 +64,9 @@
                             
                             <Score></Score>
                         </div>
-                        <div class="tab-contents">
+                        <!-- <div class="tab-contents">
                             <p>789</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
