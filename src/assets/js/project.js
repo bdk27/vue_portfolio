@@ -108,6 +108,16 @@ const vueProject = [
         url: 'https://bdk27.github.io/vite_education/',
         slide: false,
     },
+    {
+        id: nanoid(),
+        name: 'TMOV - 電影平台',
+        img1: require('../img/tmov-1.png'),
+        img2: require('../img/tmov-2.png'),
+        point: '獲取 API 請求',
+        content: '從 TMDB 網站獲取 API 資料，透過 pinia 將資料儲存起來，再利用 vue-router 來跳轉頁面並傳遞參數，實現不同公司所呈現出不同的電影及影集。而這次困難的點是如何設定參數得到想要的資料，以及如何獲取將資料並完整呈現出來',
+        url: 'https://bdk27.github.io/vite_tmov/',
+        slide: true,
+    },
 ]
 
 export { htmlProject, vueProject }
